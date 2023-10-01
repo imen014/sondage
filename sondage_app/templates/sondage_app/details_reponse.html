@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>details reponse </title>
+</head>
+<body>
+<h5>reponse : </h5>
+<ul>
+{% for reponse in reponses %}
+<li>reponse client : {{ reponse.reponse_client }} - sondage associée : {{ reponse.sondage }} - du client : {{ reponse.client }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>

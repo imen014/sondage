@@ -1,0 +1,15 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>informations client </title>
+</head>
+<body>
+<h5>client : </h5>
+<ul>
+{% for client in clients %}
+<li>{{ client.nom }} - {{ client.age }} ans</li>
+{% endfor %}
+</ul>
+</body>
+</html>

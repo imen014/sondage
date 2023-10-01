@@ -1,0 +1,16 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>liste sondage </title>
+</head>
+<body>
+<h5>sondage : </h5>
+<ul>
+{% for sondage in sondages %}
+<li><a href="{% url 'details-sondage' sondage.id %}"> {{ sondage.titre }} </a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>

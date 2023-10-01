@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>liste questions</title>
+</head>
+<body>
+<h5>sestions : </h5>
+<ul>
+{% for question in questions %}
+<li>{{ question.question_sondage }} - sondage associés : {{ question.sondage_associer }} </li>
+{% endfor %}
+
+</ul>
+
+</body>
+</html>
